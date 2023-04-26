@@ -1,0 +1,82 @@
+@charset 'utf-8';
+
+$Color01:#fff;
+$snsColor01:#FEE500;
+$snsColor02:#2db400;
+$snsColor03:#3b5998 ;
+
+@mixin buTton{
+  width: 300px;
+  height: 50px;
+  color: $Color01;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-indent: 30px;
+}
+@mixin after{
+  top: 8px;
+  left: 8px;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/sns_icon.png);
+  background-position-x: 313px;
+  background-position-y: -151px;
+  z-index: 9999;
+  background-size: 420px;
+}
+@mixin before{
+  position: absolute;
+  display: block;
+  content: '';
+  width: 1px;
+  height: 50px;
+  background: $Color01;
+  top: 0;
+  left: 48px;
+}
+button{
+  @include buTton;
+  position: relative;
+}
+button:first-of-type{
+  background: $snsColor01;
+  color: #191919;
+}
+button:nth-of-type(2){
+  background: $snsColor02;
+  background-image: #fff;
+}
+button:last-of-type{
+  background: $snsColor03;
+}
+button:first-of-type::after{
+  @include after;
+}
+button:nth-of-type(2)::before{
+  background: #fff;
+  @include before;
+}
+button:first-of-type::before{
+  @include before;
+  background: #191919;
+}
+button:nth-of-type(2)::after{
+  @include after;
+  background-color: #fff;
+  background-size: 575px;
+  background-position-x: 233px;
+  background-position-y: -77px;
+}
+button:last-of-type::before{
+  @include before;
+}
+button:last-of-type::after{
+  @include after;
+  background-position-x:222px;
+}

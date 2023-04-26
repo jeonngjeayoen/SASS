@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+.title01 {
+  font-family: "Noto Sans KR", "맑은 고딕", arial, sans-serif;
+  font-size: 30px;
+  background-color: #ffff00;
+  color: #ff0000;
+}
+
+.title02 {
+  font-family: "Noto Sans KR", "맑은 고딕", arial, sans-serif;
+  font-size: 30px;
+  background-color: #ffff00;
+  color: #0000ff;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+.bar_bg {
+  background: #f0f0f0;
+  width: 600px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.bar_bg div {
+  position: relative;
+  height: 40px;
+  width: 0;
+  background: #fddc7a;
+  overflow: hidden;
+  top: -60px;
+  transition: 0.5s;
+}
+
+.bar_bg h4 {
+  z-index: 9999;
+  position: relative;
+  text-indent: 10px;
+}
+
+.bar_bg div span {
+  display: block;
+  width: 40px;
+  margin-right: 10px;
+  background: #333;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  right: -10px;
+}
+
+li:first-child .bar_bg .active {
+  width: 70%;
+}
+
+li:nth-child(2) .bar_bg .active {
+  width: 80%;
+}
+
+li:nth-child(3) .bar_bg .active {
+  width: 80%;
+}
+
+li:nth-child(4) .bar_bg .active {
+  width: 80%;
+}
+
+li:nth-child(5) .bar_bg .active {
+  width: 70%;
+}
+
+li:nth-child(6) .bar_bg .active {
+  width: 60%;
+}
+
+li:nth-child(7) .bar_bg .active {
+  width: 40%;
+}
+
+li:nth-child(8) .bar_bg .active {
+  width: 30%;
+}
+
+li:nth-child(9) .bar_bg .active {
+  width: 80%;
+}
+
+li:last-child .bar_bg .active {
+  width: 70%;
+}/*# sourceMappingURL=style3.css.map */

@@ -1,0 +1,88 @@
+//스킬창
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+
+$display: block;
+@mixin h3txt{
+  font-family: "Noto Sans KR", "맑은 고딕", arial, sans-serif;
+  font-size:30px;
+}
+.title01{
+  @include h3txt();
+  background-color: $bg_color;
+  color: $txt_color01;
+}
+.title02{
+  @include h3txt();
+  background-color: $bg_color;
+  color: $txt_color02;
+}
+ul,li,ol{
+  list-style: none;
+}
+@mixin odd_tr($bg:#fddc7a){
+  background: $bg;
+}
+@mixin skillBar($t_bg:#f0f0f0){
+  background:$t_bg;
+  width:600px;
+  height: 40px;
+  line-height: 40px;
+}
+.bar_bg{
+  @include skillBar;
+}
+.bar_bg div{
+  position: relative;
+  height: 40px;
+  width: 0;
+  @include odd_tr;
+  overflow: hidden;
+  top: -60px;
+  transition: 0.5s;
+}
+.bar_bg h4{
+  z-index: 9999;
+  position: relative;
+  text-indent: 10px;
+}
+.bar_bg div span{
+  display: block;
+  width: 40px;
+  margin-right: 10px;
+  background: #333;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  right: -10px;
+}
+li:first-child .bar_bg .active{
+  width: 70%;
+}
+li:nth-child(2) .bar_bg  .active{
+  width: 80%;
+}
+li:nth-child(3) .bar_bg .active{
+  width: 80%;
+}
+li:nth-child(4) .bar_bg .active{
+  width: 80%;
+}
+li:nth-child(5) .bar_bg .active{
+  width: 70%;
+}
+li:nth-child(6) .bar_bg .active{
+  width: 60%;
+}
+li:nth-child(7) .bar_bg .active{
+  width: 40%;
+}
+li:nth-child(8) .bar_bg .active{
+  width: 30%;
+}
+li:nth-child(9) .bar_bg .active{
+  width: 80%;
+}
+li:last-child .bar_bg .active{
+  width: 70%;
+}

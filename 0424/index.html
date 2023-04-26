@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스킬창</title>
+  <link rel="stylesheet" href="./css/style3.css">
+      <!-- 제이쿼리 라이브러리 -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <!-- 제이쿼리 UI라이브러리 -->
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+      <script>
+        $(function(){
+          $('.skill_lab').click(function(){
+            $('.skill_lab ul li').find('.bar').toggleClass('active');
+          })
+        })
+      </script>
+</head>
+<body>
+  <div class="skill_lab">
+    <h3>skill</h3>
+    <ul>
+      <li>
+        <div class="bar_bg">
+          <h4>기획</h4>
+          <div class="bar">
+            <span>70%</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="bar_bg">
+          <h4>설계</h4>
+          <div class="bar">
+            <span>80%</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="bar_bg">
+          <h4>ui/ux디자인(figma)</h4>
+          <div class="bar">
+            <span>80%</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="bar_bg">
+          <h4>html5</h4>
+          <div class="bar">
+            <span>70%</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="bar_bg">
+          <h4>css3</h4>
+          <div class="bar">
+            <span>80%</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="bar_bg">
+          <h4>javascript/jquery</h4>
+          <div class="bar">
+            <span>60%</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="bar_bg">
+          <h4>react</h4>
+          <div class="bar">
+            <span>40%</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="bar_bg">
+          <h4>sql</h4>
+          <div class="bar">
+            <span>30%</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="bar_bg">
+          <h4>웹표준/접근성</h4>
+          <div class="bar">
+            <span>80%</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="bar_bg">
+          <h4>git</h4>
+          <div class="bar">
+            <span>70%</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+    </div>
+</body>
+</html>

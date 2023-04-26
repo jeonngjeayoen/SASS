@@ -1,0 +1,111 @@
+button {
+  width: 300px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-indent: 30px;
+  position: relative;
+}
+
+button:first-of-type {
+  background: #FEE500;
+  color: #191919;
+}
+
+button:nth-of-type(2) {
+  background: #2db400;
+  background-image: #fff;
+}
+
+button:last-of-type {
+  background: #3b5998;
+}
+
+button:first-of-type::after {
+  top: 8px;
+  left: 8px;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/sns_icon.png);
+  background-position-x: 313px;
+  background-position-y: -151px;
+  z-index: 9999;
+  background-size: 420px;
+}
+
+button:nth-of-type(2)::before {
+  background: #fff;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 50px;
+  background: #fff;
+  top: 0;
+  left: 48px;
+}
+
+button:first-of-type::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 50px;
+  background: #fff;
+  top: 0;
+  left: 48px;
+  background: #191919;
+}
+
+button:nth-of-type(2)::after {
+  top: 8px;
+  left: 8px;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/sns_icon.png);
+  background-position-x: 313px;
+  background-position-y: -151px;
+  z-index: 9999;
+  background-size: 420px;
+  background-color: #fff;
+  background-size: 575px;
+  background-position-x: 233px;
+  background-position-y: -77px;
+}
+
+button:last-of-type::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 50px;
+  background: #fff;
+  top: 0;
+  left: 48px;
+}
+
+button:last-of-type::after {
+  top: 8px;
+  left: 8px;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/sns_icon.png);
+  background-position-x: 313px;
+  background-position-y: -151px;
+  z-index: 9999;
+  background-size: 420px;
+  background-position-x: 222px;
+}/*# sourceMappingURL=style.css.map */
